@@ -124,14 +124,18 @@ export default function MealInput() {
 
     try {
       const res = await fetch(MEAL_FN_URL, {
-        method: "POST",
-        headers: {
-          "Content-Type": "application/json",
-        },
-        body: JSON.stringify({
-          text: trimmed,
-        }),
-      });
+  method: "POST",
+  headers: {
+    "Content-Type": "application/json",
+    apikey:
+      "sb_publishable_Gq_Vm4rNOQ89pswJdEYjZw_25bBVxyl",
+    Authorization:
+      "Bearer sb_publishable_Gq_Vm4rNOQ89pswJdEYjZw_25bBVxyl",
+  },
+  body: JSON.stringify({
+    text: trimmed,
+  }),
+});
 
       if (!res.ok) {
         const body = await res.text();
