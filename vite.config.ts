@@ -3,7 +3,7 @@ import react from "@vitejs/plugin-react";
 import { VitePWA } from "vite-plugin-pwa";
 
 export default defineConfig({
-  base: "/Joe-Tracker-/",
+  base: "/Tracker-Fit-Joe",
 
   plugins: [
     react(),
