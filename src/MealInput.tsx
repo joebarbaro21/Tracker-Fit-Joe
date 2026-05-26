@@ -127,10 +127,6 @@ export default function MealInput() {
   method: "POST",
   headers: {
     "Content-Type": "application/json",
-    apikey:
-      "sb_publishable_Gq_Vm4rNOQ89pswJdEYjZw_25bBVxyl",
-    Authorization:
-      "Bearer sb_publishable_Gq_Vm4rNOQ89pswJdEYjZw_25bBVxyl",
   },
   body: JSON.stringify({
     text: trimmed,
